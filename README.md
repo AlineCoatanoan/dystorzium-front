@@ -45,10 +45,14 @@ dystorzium-front/
 ├── pnpm-lock.yaml
 └── README.md
 
+## Roadmap du projet
+
+Pour suivre les évolutions et les prochaines étapes, consultez la [Roadmap](./ROADMAP.md) du projet.
+
 
 ## 🧬 Auteure
 
-Développé avec amour et curiosité par [Aline](https://github.com/ton-pseudo).  
+Développé avec amour et curiosité par [Aline](https://github.com/AlineCoatanoan).  
 Toujours à l’affût d’une bonne pratique, toujours partante pour tester une nouvelle lib.
 
 ---
