@@ -1,69 +1,59 @@
-# React + TypeScript + Vite
+# 🎭 Dystorzium - Front
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Interface utilisateur de Dystorzium**, un jeu d'énigmes immersif développé en React + TypeScript, propulsé par Vite.
 
-Currently, two official plugins are available:
+> 🧠 L’objectif : offrir une expérience front ludique, fluide, élégante, et modulable. Et surtout… bien codée.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Stack technique
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ **React 19**
+- 💨 **Tailwind CSS**
+- 🔐 **TypeScript**
+- 🧠 **Zustand** pour la gestion d’état
+- 📦 **pnpm** comme gestionnaire de paquets
+- 🧹 **ESLint** & **Prettier** pour le lint & le style
+- 🧪 **[à venir]** Tests unitaires avec Jest / React Testing Library
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📁 Arborescence principale
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Les dossiers sont organisés de façon à garder un front **lisible et scalable**.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+dystorzium-front/
+├── public/
+├── src/
+│   ├── assets/             
+│   ├── components/          
+│   ├── features/           
+│   ├── hooks/              
+│   ├── store/              
+│   ├── pages/              
+│   ├── types/               
+│   ├── utils/               
+│   ├── App.tsx              
+│   ├── main.tsx             
+│   ├── index.css            
+│   └── vite-env.d.ts
+├── .eslintrc.cjs
+├── tailwind.config.js
+├── postcss.config.js
+├── tsconfig.json
+├── package.json
+├── pnpm-lock.yaml
+└── README.md
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧬 Auteure
+
+Développé avec amour et curiosité par [Aline](https://github.com/ton-pseudo).  
+Toujours à l’affût d’une bonne pratique, toujours partante pour tester une nouvelle lib.
+
+---
+
+## 📫 Contact
+
+Tu veux en savoir plus ? Ouvre une issue ou envoie-moi un petit mot.  
+Sinon, reste dans le coin : ce n’est que le début du Dystorzium.
